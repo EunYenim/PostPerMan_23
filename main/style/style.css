@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* CSS 속성은 스크롤 동작을 부드럽게 만들어주는 속성 */
+}
+
+body {
+}
+
+/* section 설정 */
+
+#main-section {
+  height: 100dvh;
+  width: 100%;
+}
+#about-info-start {
+  height: 80dvh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#about-info-scroll {
+  height: 100dvh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#about-textscroll {
+  height: 100dvh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+footer {
+  height: 100dvh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* section0 Text와 Grid설정 */
+
+#waterCanvas {
+  position: absolute;
+  z-index: -1;
+}
+
+#main-section {
+  display: grid;
+  margin-inline: auto;
+}
+
+#divided-section {
+  display: inline-block;
+}
+
+#title-wrapper > div {
+  text-align: center;
+}
+
+.title {
+  padding-top: 12.5rem;
+  padding-left: 2.1875rem;
+  font-size: 5rem;
+}
+
+#menu-bar {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.menuText {
+  font-size: 1.5625rem;
+}
+#menu-Archive {
+  padding-left: 1.25rem;
+}
+
+#menu-Gallary {
+  padding-right: 1.25rem;
+}
+
+#scroll-guide > div {
+  text-align: center;
+}
+
+/* section1 */
+#about-info-start {
+  display: grid;
+}
+#info-title {
+  font-size: 3.125rem;
+  display: flex;
+  margin-top: 12.5rem;
+  justify-content: center;
+  /* align-items: flex-end;  */
+}
+#info-context {
+  font-size: 1.5rem;
+  text-align: center;
+  /* opacity: 0;
+  animation: slide-up 1.5s ease-in-out forwards;
+  animation-delay: 0.2s; */
+}
